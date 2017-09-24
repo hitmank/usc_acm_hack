@@ -207,6 +207,8 @@ function smoothZoom (map, max, cnt) {
           dissipating: true,
           map: map
         });
+       heatmap.set('maxIntensity',100);
+       heatmap.set('radius',100);
        document.getElementById("button2").disabled = true;
        $('#button1').css('background','whitesmoke');
        $('#button1').css('color','black');
