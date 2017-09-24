@@ -1,5 +1,5 @@
 from flask import Flask
-import urllib2, PyPDF2, slate, re, os
+import urllib2, PyPDF2, slate, re, os, json
 from bs4 import BeautifulSoup, SoupStrainer
 
 results = []
@@ -63,4 +63,5 @@ for date, file_name in file_list.iteritems():
     parse_pdf(pdf_text)
     os.remove("report.pdf")
     count = count +1
+to_send = json.dumps(results)
 print "Hello"

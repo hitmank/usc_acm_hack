@@ -1,5 +1,5 @@
 from flask import Flask
-import urllib2, PyPDF2, slate, re, os
+import urllib2, PyPDF2, slate, re, os, json
 from bs4 import BeautifulSoup, SoupStrainer
 
 app = Flask(__name__)
@@ -44,7 +44,7 @@ def hello():
     return "Hello World!"
 
 @app.route("/data")
-def hello():
+def parser():
 
 
     file_list = {}
@@ -72,7 +72,8 @@ def hello():
         os.remove("report.pdf")
         count = count +1
     print "Hello"
-    return
+    to_send = json.dumps(results)
+    return to_send
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')
