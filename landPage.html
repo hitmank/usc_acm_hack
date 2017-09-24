@@ -1,0 +1,137 @@
+<html>
+<script type="text/javascript">
+
+function goToMap(){
+	window.location.href = "index.html";
+}
+
+</script>
+<style type="text/css">
+
+	#stats{
+		    width: 50%;
+    background: darkgray;
+    height: 100%;
+    float: left;
+        margin-top: 2%;
+	}
+	#rightSide{
+		    float: right;
+    height: 100%;
+    width: 50%;
+    background: antiquewhite;
+        margin-top: 2%;
+	}
+	#header{
+		margin: 0 auto;
+    position: relative;
+    width: 70%;
+	}
+	#hSection{
+		    position: relative;
+    margin: 0 auto;
+    width: 50%;
+	}
+	#choose{
+		height: 50%;
+	}
+	#buttonS{
+		height: 50%;
+	}
+	#mapBut{
+		position: relative;
+    margin-left: 34%;
+    margin-top: 4%;
+	}
+</style>
+<body>
+	<section id="hSection"> <h1 id="header">Welcome to the Crime App! </h1></section>
+	<section id ="stats">
+
+		<div class="container" style="width:100%;height:100%;">
+  <h2>Here are the latest Crime Stats!</h2>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Number of incidents</th>
+        <th>Most frequent places</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Murder</td>
+        <td>50</td>
+        <td>Jefferson</td>
+      </tr>
+      <tr>
+        <td>Heavy partying and alcohol</td>
+        <td>1000000</td>
+        <td>The Row</td>
+      </tr>
+      <tr>
+        <td>Bad language</td>
+        <td>40000</td>
+        <td>2717 Orchard</td>
+      </tr>
+      <tr>
+        <td>Bad cooking</td>
+        <td>400</td>
+        <td>Severence street</td>
+      </tr>
+      <tr>
+        <td>Racism</td>
+        <td>40</td>
+        <td>Murica!</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+	</section>
+	<section id = "rightSide">
+		<section id="choose" >
+			<div class="container" style="width:90%">
+  <h2>What are you interested in?</h2>
+  
+  <form>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Murder</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Bicycle theft</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" >Robbery</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" >Knifing</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" >Gang fights</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" >Bad cooking</label>
+    </div>
+  </form>
+</div>
+	
+
+
+		</section>
+		<section id = "buttonS">
+				<h2 style="margin-left:8%;"> Want to see whats happening around you? </h2>
+			  <button type="button" onclick="goToMap()" class="btn btn-primary" id="mapBut">Click to see the crime map</button>
+
+		</section>
+
+
+	</section>
+</body>
+ 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</html>

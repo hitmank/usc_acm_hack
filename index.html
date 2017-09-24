@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+              height: 89%;
+    width: 99%;
+    margin: 0 auto;
+    top: 3%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #buttonDiv{
+       margin: 0 auto;
+    width: 30%;
+    height: 5%;
+    top: 1%;
+    position: relative;
+      }
+      #button1{
+        width: 50%;
+        height: 100%;
+        font-size: large;
+      } 
+       #button2{
+        width: 50%;
+        height: 100%;
+        float: right;
+        font-size: large;
+      }
+      #inputDic{
+      position: relative;
+    top: 1.5%;
+    margin: 0 auto;
+    width: 31%;
+      }
+      #destinationInput{
+        width: 60%;
+      }
+      #goButton{
+            font-size: medium;
+    padding-left: 9px;
+    margin-left: 14px;
+      }
+    </style>
+<script type="text/javascript">
+
+  
+
+</script>
+    
+  </head>
+  <body>
+    <div id="buttonDiv">
+    <button id="button1" onclick="toggleMode()">Individual Crimes</button>
+    <button id="button2" onclick="toggleMode()">Crime Heat Map</button>
+  </div>
+  <div id="inputDic">
+    <label>Directions to : </label><input id ="destinationInput"></input><button id="goButton" onclick="plotRoute()">GO!</button>
+  </div>
+    <div id="map"></div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUSukB78Job45SK95eeEJDbqDMxQXxmI8&libraries=visualization&callback=initMap">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
