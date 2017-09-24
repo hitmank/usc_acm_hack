@@ -1,8 +1,10 @@
 from flask import Flask
 import urllib2, PyPDF2, slate, re, os, json
+from flask_cors import CORS, cross_origin
 from bs4 import BeautifulSoup, SoupStrainer
 
 app = Flask(__name__)
+CORS(app)
 
 results = []
 
@@ -59,8 +61,8 @@ def parser():
 
     count = 0
     for date, file_name in file_list.iteritems():
-    #    if count == 10:
-    #        break
+        if count == 10:
+            break
         pdf_file = urllib2.urlopen(file_name)
         data = pdf_file.read()
         with open("report.pdf", "wb") as code:
