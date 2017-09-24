@@ -1,0 +1,10 @@
+34.028362, -118.273139, Lorenzo, 5.0, Theft
+34.029608, -118.287812, Orchard, 2.0, Robbery
+34.022352, -118.285117, GFS, 10.0, Murder
+34.021800, -118.282830, Leavy, 5.1, Chain snatching
+34.028143, -118.279848, Portland, 3.5, Drugs
+34.029536, -118.280985, Severence, 4.7, Thugs
+34.016944, -118.282486, Chipotle, 8.1, Abduction
+34.031845, -118.290793, ralphs, 3.9, Kidnapping
+34.025425, -118.285187, village, 1.7, shouting
+34.024405, -118.288428, Lyon, 2.0, Heavy Party
