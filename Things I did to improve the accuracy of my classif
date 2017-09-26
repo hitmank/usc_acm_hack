@@ -1,0 +1,17 @@
+Things I did to improve the accuracy of my classifier :
+
+1. Removing punctuations from the sentences : 
+	I removed the punctuations from the input training sentences, as I found both sets of writers used them alot. Plus the loss/gain after removing them wasnt large.
+	Hence I feel they arent very important features.
+2. Removing Stop words:
+	Again, this is to remove unneccesary words that are common in both the writers poems.
+	Thier effect on the accuracy was minimal before and after removal.
+3. length of words as a feature
+	This was my biggest feature in terms of improving accuracy.
+	I calculated the length of the sentence after removing the stops words and this feature turned out to be very important in distinguishing the writers.
+4. Bigram Collocations as a feature
+	Here, I found the Bigrams of the sentence and took the most important ones as features.
+	This was done after removal of punctuations and stop words.
+	It pushed my accuracy from 88-89% upto 95%.
+
+I feel doing more than this would lead to over-fitting the dataset.
